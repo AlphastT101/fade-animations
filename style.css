@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar-thumb:hover {background: linear-gradient(90deg, #8f94fb, #ff0000);}
+* {scrollbar-width: thin; scrollbar-color: #4e54c8 #1e1e2f;}
+::-webkit-scrollbar {width: 12px; height: 12px;}
+::-webkit-scrollbar-track {background: #1e1e2f; border-radius: 10px;}
+::-webkit-scrollbar-thumb {background: linear-gradient(90deg, #4e54c8, #ff0000); border-radius: 10px;}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.full-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #52013f); /* Gradient with multiple colors */
+    color: white;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+
+p{
+    text-align: center;
+}
+.full-screen h1 {
+    font-size: 3rem;
+    position: relative;
+    padding: 5px;
+    display: inline-block;
+}
+
+.animated-text {
+    background: linear-gradient(45deg, #a3a3a3, #9a4bf1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    gap: 50px;
+    flex-direction: column;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #0011ff, #ff0000);
+    margin: 20px 0;
+}
+
+.header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    padding: 20px 40px;
+}
+
+.ani-header{
+    margin-bottom: 100px;
+}
+
+.ani-card{
+    margin: 5px;
+    margin-bottom: 250px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgb(43, 43, 43), rgb(37, 0, 71));
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+.default{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+code {
+    display: block;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 20px !important;
+    color: #ffffff;
+}
+
+pre {
+    background: black !important;
+    padding: 0px !important;
+    border-radius: 10px;
+    overflow: scroll;
+    width: 95%;
+}
